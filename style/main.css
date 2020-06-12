@@ -1,0 +1,23 @@
+.todos-list{
+    width: 200px;
+    border: 1px solid grey;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todos-list li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.todos-list li.done {
+    text-decoration: line-through;
+}
+
+.table td.done{
+    text-decoration: line-through;
+}
+
+.fa-trash-alt{
+    color: red;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker">
+  <link rel="stylesheet" href="./style/memory.css">
+</head>
+
+<body>
+
+  <div class="row mb-5">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Memory Game <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container mt-5">
+    <header>
+      <h1>Memory Game</h1>
+    </header>
+    <section class="score-panel">
+      <ul class="stars">
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+      </ul>
+
+      <span class="moves">0</span> Move(s)
+
+      <div class="timer">
+      </div>
+
+      <div class="restart">
+        <i class="fa fa-repeat"></i>
+      </div>
+    </section>
+
+    <section class="memory-game">
+      <div class="memory-card" data-planet="Saturn">
+        <img class="front-face" src="./img/image0.jpg" alt="Aurelia" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+      <div class="memory-card" data-planet="Saturn">
+        <img class="front-face" src="./img/image0.jpg" alt="Aurelia" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+
+      <div class="memory-card" data-planet="All">
+        <img class="front-face" src="./img/image1.jpg" alt="Vue" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+      <div class="memory-card" data-planet="All">
+        <img class="front-face" src="./img/image1.jpg" alt="Vue" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+
+      <div class="memory-card" data-planet="Mars">
+        <img class="front-face" src="./img/image2.jpg" alt="Angular" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+      <div class="memory-card" data-planet="Mars">
+        <img class="front-face" src="./img/image2.jpg" alt="Angular" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+
+      <div class="memory-card" data-planet="Neptune">
+        <img class="front-face" src="./img/image3.jpg" alt="Ember" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+      <div class="memory-card" data-planet="Neptune">
+        <img class="front-face" src="./img/image3.jpg" alt="Ember" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+
+      <div class="memory-card" data-planet="Pluto">
+        <img class="front-face" src="./img/image4.jpg" alt="Backbone" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+      <div class="memory-card" data-planet="Pluto">
+        <img class="front-face" src="./img/image4.jpg" alt="Backbone" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+
+      <div class="memory-card" data-planet="Earth">
+        <img class="front-face" src="./img/image8.jpg" alt="React" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+      <div class="memory-card" data-planet="Earth">
+        <img class="front-face" src="./img/image8.jpg" alt="React" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+
+      <div class="memory-card" data-planet="SolarSystem">
+        <img class="front-face" src="./img/image6.jpg" alt="React" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+      <div class="memory-card" data-planet="SolarSystem">
+        <img class="front-face" src="./img/image6.jpg" alt="React" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+
+      <div class="memory-card" data-planet="Mercury">
+        <img class="front-face" src="./img/image7.jpg" alt="React" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+      <div class="memory-card" data-planet="Mercury">
+        <img class="front-face" src="./img/image7.jpg" alt="React" />
+        <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+      </div>
+    </section>
+  </div>
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Congratulations!</h2>
+      <a class="close" href=#>×</a>
+      <div class="content-1">
+        Congratulations you're a winner
+      </div>
+      <div class="content-2">
+        <p>You made <span id=finalMove> </span> moves </p>
+        <p>in <span id=totalTime> </span> </p>
+        <p>Rating: <span id=starRating></span></p>
+      </div>
+      <button id="play-again">
+        Play again</a>
+      </button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="MemoryGame/memory.js" type="module"></script>
+</body>
+
+</html>
